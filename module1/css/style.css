@@ -48,17 +48,17 @@ a {
 .navigation__items {
     display: flex;
 }
-.navigation__items li {
+.navigation__items a {
     font-size: 16px;
     line-height: 160%;
     color: #4B5D68;
 }
-.navigation__items a:not(:nth-child(1)){
+.navigation__items li:not(:nth-child(1)){
     margin-left: 40px;
 }
-.navigation__link:hover .navigation__item, 
-.navigation__link:focus .navigation__item, 
-.navigation__link:active .navigation__item {
+.navigation__item:hover .navigation__link, 
+.navigation__item:focus .navigation__link, 
+.navigation__item:active .navigation__link {
     transition: 0.5s;
     color: #212353;
 }
