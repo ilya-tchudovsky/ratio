@@ -56,9 +56,12 @@ a {
 .navigation__items li:not(:nth-child(1)){
     margin-left: 40px;
 }
-.navigation__item:hover .navigation__link, 
-.navigation__item:focus .navigation__link, 
+.navigation__item:hover .navigation__link,
+.navigation__item:focus .navigation__link,
 .navigation__item:active .navigation__link {
+    /*
+    ** TODO: в нулевых значениях пишем '.5s'
+     */
     transition: 0.5s;
     color: #212353;
 }
@@ -95,6 +98,10 @@ a {
     position: absolute;
     right: 0;
     bottom: 0;
+    /*
+    ** TODO: отрицательный z-index лучше не использовать
+    ** можно было просто задать позицию выше у в основного блока
+    */
     z-index: -1;
 }
 /* data */
@@ -139,6 +146,10 @@ a {
 }
 .features-subtitle {
     max-width: 586px;
+    /*
+    ** TODO: лучше так 'margin: 50px auto 0 auto'
+    ** и не нужно перебивать правилом ниже
+    */
     margin: 0 auto;
     text-align: center;
     margin-top: 50px;
@@ -170,6 +181,9 @@ a {
     background: url(../img/background4.svg) right no-repeat;
 }
 .content__card-img {
+    /*
+    ** TODO: в нулевых значениях 'px' опускается
+    */
     margin: 74px 30px 74px 0px;
 }
 .content__card__description {
